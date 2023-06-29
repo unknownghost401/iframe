@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Facebook Login Page</title>
+  <title>Login Pages</title>
   <style>
     body {
       margin: 0;
@@ -11,20 +11,27 @@
       overflow: hidden;
     }
 
-    #login-container {
+    .login-container {
       width: 50%;
       height: 100%;
       border: none;
     }
+
+    .left-container {
+      background-color: #f2f2f2;
+    }
+
+    .right-container {
+      background-color: #fff;
+    }
   </style>
 </head>
 <body>
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var loginContainer = document.getElementById('login-container');
-      loginContainer.src = 'https://www.facebook.com/login';
-    });
-  </script>
-  <iframe id="login-container" frameborder="0"></iframe>
+  <div class="left-container">
+    <iframe class="login-container" src="https://www.facebook.com/login" frameborder="0"></iframe>
+  </div>
+  <div class="right-container">
+    <iframe class="login-container" src="https://github.com/login" frameborder="0"></iframe>
+  </div>
 </body>
 </html>
