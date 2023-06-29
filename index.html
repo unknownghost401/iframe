@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #login-container {
+      width: 50%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var loginContainer = document.getElementById('login-container');
+      loginContainer.src = 'https://www.facebook.com/login';
+    });
+  </script>
+  <iframe id="login-container" frameborder="0"></iframe>
+</body>
+</html>
